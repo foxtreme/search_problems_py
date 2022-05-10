@@ -9,9 +9,8 @@ class Problem(ABC):
     def initial_state(self):
         ...
 
-    @property
     @abstractmethod
-    def actions(self):
+    def actions(self, state):
         ...
 
     @abstractmethod

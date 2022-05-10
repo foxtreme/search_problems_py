@@ -3,7 +3,7 @@ from abc import ABC
 
 class Node(ABC):
 
-    def __init__(self, state, parent, action, path_cost):
+    def __init__(self, state, parent=None, action=None, path_cost=None):
         self.state = state
         self.parent = parent
         self.action = action
